@@ -1,0 +1,2 @@
+#define Addr_VERSION_MAJOR @Addr_VERSION_MAJOR@
+#define Addr_VERSION_MINOR @Addr_VERSION_MINOR@

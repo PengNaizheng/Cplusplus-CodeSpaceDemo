@@ -85,5 +85,9 @@ imgui-web-demo/build/CMakeFiles/imgui_demo.dir/src/imgui/backends/imgui_impl_ope
 imgui-web-demo/build/CMakeFiles/imgui_demo.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o.d
 build/*
 imgui-web-demo/*
+code/address_book_management/build/*
+code/cmakelearn/*
+code/cmakelearn2/*
+code/test/*
 
 
