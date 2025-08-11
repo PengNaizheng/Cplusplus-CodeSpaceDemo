@@ -89,5 +89,6 @@ code/address_book_management/build/*
 code/cmakelearn/*
 code/cmakelearn2/*
 code/test/*
-
+code/test2/*
+vsix/*
 

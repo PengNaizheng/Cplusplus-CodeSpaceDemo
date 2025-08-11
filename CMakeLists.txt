@@ -11,3 +11,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(helloworld main.cpp)
 
 add_executable(helloworld2 main.cpp)
+
+add_subdirectory(code/address_book_management)
