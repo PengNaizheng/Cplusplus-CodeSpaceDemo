@@ -18,7 +18,20 @@ int main()
     {
         showMenu();
 
-        std::cin >> select;
+        while (true)
+        {
+            std::cin >> select;
+            if (std::cin.fail() || select < 0 || select > 6) {
+                std::cin.clear(); 
+                char clearin = '\0';
+                while(clearin != '\n') {
+                    std::cin.get(clearin);
+                }
+                std::cout << "无效输入，请重新输入选项：";
+            } else {
+                break; 
+            }
+        }
 
         switch(select)
         {
@@ -93,7 +106,20 @@ void readperson(Person &newperson)
     std::cout << "请输入性别：";
     std::cin >> newperson.m_Sex;
     std::cout << "请输入年龄：";
-    std::cin >> newperson.m_Age;
+    while (true)
+    {
+        std::cin >> newperson.m_Age;
+        if (std::cin.fail()) {
+            std::cin.clear(); 
+            char clearin = '\0';
+            while(clearin != '\n') {
+                std::cin.get(clearin);
+            }
+            std::cout << "非年龄数值，请重新输入年龄：";
+        } else {
+            break; 
+        }
+    }
     std::cout << "请输入联系电话：";
     std::cin >> newperson.m_Phone;
     std::cout << "请输入家庭住址：";
